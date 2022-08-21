@@ -24,7 +24,7 @@ export default function ShowStudent() {
   const [studentList, setStudentList] = useState([])
 
   const deleteStudent = (id) => {
-    axios.delete(`https://student-app-servers.herokuapp.com/students/:${id}`).then(() => {
+    axios.delete(`https://student-app-servers.herokuapp.com/students/${id}`).then(() => {
       window.location.reload(false);
     })
   }
