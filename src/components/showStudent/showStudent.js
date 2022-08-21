@@ -29,7 +29,7 @@ export default function ShowStudent() {
     })
   }
   useEffect(()=>{
-    axios.get('http://localhost:5000/students').then ((allStudents) => {
+    axios.get('https://student-app-servers.herokuapp.com/students').then ((allStudents) => {
       setStudentList(allStudents.data)
     })
   }, [])
