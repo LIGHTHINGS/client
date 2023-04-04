@@ -24,7 +24,7 @@ export default function CreateStudent() {
   });
 
   const createStudent = () => {
-    axios.post('https://student-app-servers.herokuapp.com/students', student).then(() => {
+    axios.post('https://studentapp-server-q8de.onrender.com/students', student).then(() => {
       window.location.reload(false);
     })
   }
